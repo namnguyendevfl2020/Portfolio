@@ -1,0 +1,53 @@
+.container {
+    max-width: 300px;
+    min-width: 300px;
+    height: 100%;
+    z-index: 3;
+    background: white;
+    position: fixed;
+    /* top: 65px; */
+}
+
+.container-offset {
+    max-width: 300px;
+    min-width: 300px;
+    height: 100%;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.break {
+    height: 17px
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background: #3578E5;
+    color: white;
+    height: 40px;
+}
+
+.badge-spacing {
+    height: 65px;
+}
+
+.badge-heading {
+    position: fixed;
+    /* top: 80px; */
+    top: 0px;
+    height: 65px;
+    width: auto;
+    color: white;
+    width: 100%;
+    z-index: 3
+}

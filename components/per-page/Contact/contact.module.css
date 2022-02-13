@@ -1,0 +1,22 @@
+.input {
+    width: 100%;
+}
+
+.textarea {
+    width: 100%;
+    height: 140px;
+}
+
+.small-spacing {
+    height: 7px;
+}
+
+.send {
+    height:40px;
+    color: white;
+    background: #3578E5;
+}
+
+.info {
+    /* width: 400px */
+}

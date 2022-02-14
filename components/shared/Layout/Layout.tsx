@@ -73,12 +73,15 @@ const HeadComponent = (props: HeadComponentProps) => {
         <HeadComponent webBrowser={browser}/>
         <HeaderSpacing />
         <HeaderLinen />
-          { browser === 'Microsoft Edge (Chromium)'
+          <div>
+            {children}
+          </div>
+          {/* { browser === 'Microsoft Edge (Chromium)'
             && <ContainerEdge > {children} </ContainerEdge>
           }
           { browser !== 'Microsoft Edge (Chromium)'
             && <ContainerChrome > {children} </ContainerChrome>
-          } 
+          }  */}
       </> 
       ) 
   }

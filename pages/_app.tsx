@@ -1,11 +1,10 @@
 import '@/styles/global.css'
-import { ReactElement, ReactNode } from 'react'
+import { ReactElement, ReactNode, useState } from 'react'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { Layout } from '@/components/shared/Layout'
 import { Badge, BadgeHeading, BadgeSpacing } from '@/components/shared/Badge'
 import { Header } from '@/components/shared/Header'
-import { Provider } from 'react-redux';
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -16,14 +15,16 @@ type AppPropsWithLayout = AppProps & {
 }
 
 export default function MyApp({ Component,pageProps }: AppPropsWithLayout) {
+  const [ displayBadge, setDisplayBadge ] = useState(false);
+
   return (
       <Layout >
       <div className='d-flex' >
-        <Badge />
+        <Badge displayBadge = {displayBadge} setDisplayBadge = {setDisplayBadge} />
         <BadgeSpacing />
         <BadgeHeading />
         <div className='w-100'>
-          <Header/>
+          <Header displayBadge = {displayBadge} setDisplayBadge = {setDisplayBadge}/>
           <div >
           <Component {...pageProps} />;
           </div>

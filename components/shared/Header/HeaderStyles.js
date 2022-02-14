@@ -34,3 +34,10 @@ export const StyledBreak = styled.div `
     height: 50px;
     // width: 100%;
 `
+
+export const StyledAvatar = styled.div `
+    height: 45px;
+    width: 45px;
+    border-radius:50%;
+    overflow: hidden;
+`

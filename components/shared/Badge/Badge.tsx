@@ -2,12 +2,30 @@ import styles from './badge.module.css'
 import avatar from "./myAvatar.jpg";
 import Image from 'next/image';
 import { Icon } from "./Icons";
+import { useEffect, useState } from 'react';
 
-export default function Badge() {
-    
-    return (
-        <>
-        <div className={styles.container + " me-4 mt-2 p-0"}>
+interface BadgePropsType {
+    displayBadge: boolean;
+    setDisplayBadge:  React.Dispatch<React.SetStateAction<any>>;
+}
+
+export default function Badge({displayBadge, setDisplayBadge}: BadgePropsType) {
+    const initialWidth = window.innerWidth;
+    const [viewWidth, setViewWidth] = useState(initialWidth);
+    const handleResize = () => setViewWidth(() => window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    useEffect(() => {
+        if (viewWidth > 1200) {
+            setDisplayBadge(() => true)
+        } else {
+            if (displayBadge === true)
+            setDisplayBadge(() => !displayBadge);
+        }
+    }, [viewWidth])
+
+    return (displayBadge
+        ? <>
+        <div className={styles.container + " me-4 mt-2 p-0 d-xl-block"}>
             <div className='py-4' style = {{border: "2px solid #ced4da"}}>
                 <div className={styles.center}>
                     <div className={styles.image}>
@@ -35,5 +53,6 @@ export default function Badge() {
             </div>
         </div>
         </>
+        : <></>
     )
 } 

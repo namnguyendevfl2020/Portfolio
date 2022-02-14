@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { ContainerChrome, ContainerEdge } from './LayoutStyles';
+import { ContainerChrome, ContainerEdge, ContainerSmall } from './LayoutStyles';
 import React, { useEffect, useState } from "react";
 import type { ReactElement } from 'react'
 import { HeaderLinen, HeaderSpacing } from '../Header';
@@ -77,9 +77,9 @@ const HeadComponent = (props: HeadComponentProps) => {
         <HeaderLinen />
           {
             ( viewWidth &&  viewWidth < 600)
-            ? <div className='px-4'>
+            ? <ContainerSmall>
                 {children}
-              </div>
+              </ContainerSmall>
             : <div>
             { browser === 'Microsoft Edge (Chromium)'
             && <ContainerEdge > {children} </ContainerEdge>

@@ -65,7 +65,7 @@ export default function Contact () {
 
     return (
         <>
-        <div className='row d-lg-flex justify-content-center justify-lg-content-between '>
+        <div className='row d-md-flex justify-content-center justify-md-content-between '>
             <form className='col-lg-6 col-md-7 col-10' onSubmit={handleSubmit}>
                 <h2 className='fw-7 letter-spacing-tight'>Contact me</h2>
                 <div className='d-flex flex-column'>
@@ -109,7 +109,7 @@ export default function Contact () {
                         disabled = {disabledBtn}
                 >Send</button>
             </form>
-            <div className={styles.info + " col-4 mt-4 mt-lg-0"}>
+            <div className={" col-md-4 col-10 mt-4 mt-lg-0"}>
                 <h2 className='fw-7 letter-spacing-tight'>Infomation</h2>
                 <div className='d-flex align-items-center my-3'>
                     <Icon type = {"address"}/>
@@ -129,7 +129,6 @@ export default function Contact () {
                 </div>
             </div>
         </div>
-       
         </>
     )
 }

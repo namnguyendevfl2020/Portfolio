@@ -7,3 +7,7 @@ export const ContainerChrome = styled.main`
 export const ContainerEdge = styled.main`
     padding: 0px 2.5rem 0 2.5rem
 `
+
+export const ContainerSmall = styled.main`
+    padding: 0px 1.5rem 0 1.5rem
+`

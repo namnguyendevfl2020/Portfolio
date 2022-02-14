@@ -65,8 +65,8 @@ export default function Contact () {
 
     return (
         <>
-        <div className='d-lg-flex justify-content-between '>
-            <form className='col-6 me-auto' onSubmit={handleSubmit}>
+        <div className='row d-lg-flex justify-content-center justify-lg-content-between '>
+            <form className='col-lg-6 col-md-7 col-10' onSubmit={handleSubmit}>
                 <h2 className='fw-7 letter-spacing-tight'>Contact me</h2>
                 <div className='d-flex flex-column'>
                     <label className={labelStyle} htmlFor="name">Name </label>

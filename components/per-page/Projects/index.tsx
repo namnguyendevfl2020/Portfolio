@@ -47,30 +47,30 @@ export default function Projects() {
             )
         })
         return (
-            <div key = {idx} className="row my-2" style = {{borderBottom: "1px solid"}}>
-            <div className="col d-flex align-items-center">
-                <Image src = {image} alt = {name} width="500" height="250" />
+            <div key = {idx} className="row my-2 " style = {{borderBottom: "1px solid"}}>
+                <div className="col-12 col-md d-flex align-items-center justify-md-content-center">
+                    <Image src = {image} alt = {name} width="500" height="250" />
+                </div>
+                <div className="col-12 col-md justify-md-content-center">
+                <StyledProject>
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    <StyledTech>
+                        <div className='d-flex flex-wrap justify-content-center'>{renderedTech}</div>
+                    </StyledTech>
+                    <StyledBtnContainer className='w-100'>
+                        <div className='d-flex justify-content-center'>
+                            <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} target="_blank" rel="noreferrer">
+                                Demo
+                            </a>
+                            <a className="p-2 btn btn-primary my-3 ms-2" href={code} target="_blank" rel="noreferrer">
+                                Code
+                            </a>
+                        </div>
+                    </StyledBtnContainer>
+                </StyledProject>
+                </div>
             </div>
-            <div className="col">
-            <StyledProject>
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <StyledTech>
-                    <div className='d-flex flex-wrap justify-content-center'>{renderedTech}</div>
-                </StyledTech>
-                <StyledBtnContainer className='w-100'>
-                    <div className='d-flex justify-content-center'>
-                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} target="_blank" rel="noreferrer">
-                            Demo
-                        </a>
-                        <a className="p-2 btn btn-primary my-3 ms-2" href={code} target="_blank" rel="noreferrer">
-                            Code
-                        </a>
-                    </div>
-                </StyledBtnContainer>
-            </StyledProject>
-            </div>
-        </div>
         )
     })
     return (<>

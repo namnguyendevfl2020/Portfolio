@@ -20,10 +20,12 @@ const HeadComponent = (props: HeadComponentProps) => {
   }
   
   interface LayoutProps {
-      children: ReactElement
+    children: ReactElement;
+    viewWidth: number | undefined;
   }
+
   export default function Layout (props: LayoutProps) {
-    const { children } = props
+    const { children, viewWidth } = props
     const [browser, setBrowser] = useState<string>("")
     const { pathname } = useRouter()
     useEffect (() => {
@@ -73,15 +75,22 @@ const HeadComponent = (props: HeadComponentProps) => {
         <HeadComponent webBrowser={browser}/>
         <HeaderSpacing />
         <HeaderLinen />
-          <div>
-            {children}
-          </div>
-          {/* { browser === 'Microsoft Edge (Chromium)'
+          {
+            ( viewWidth &&  viewWidth < 600)
+            ? <div className='px-2'>
+                {children}
+              </div>
+            : <div>
+            { browser === 'Microsoft Edge (Chromium)'
             && <ContainerEdge > {children} </ContainerEdge>
+            }
+            { browser !== 'Microsoft Edge (Chromium)'
+              && <ContainerChrome > {children} </ContainerChrome>
+            }  
+          </div>
           }
-          { browser !== 'Microsoft Edge (Chromium)'
-            && <ContainerChrome > {children} </ContainerChrome>
-          }  */}
+          
+          
       </> 
       ) 
   }

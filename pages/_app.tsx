@@ -27,7 +27,7 @@ export default function MyApp({ Component,pageProps }: AppPropsWithLayout) {
       window.addEventListener('resize', handleResize);
   }
   return (
-      <Layout >
+      <Layout viewWidth = {viewWidth}>
       <div className='d-flex' >
         <Badge  displayBadge = {displayBadge} setDisplayBadge = {setDisplayBadge} 
                 viewWidth = {viewWidth}

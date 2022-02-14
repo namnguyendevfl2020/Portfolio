@@ -4,6 +4,7 @@ import { StyledContainer, StyledNavItem, StyledList, StyledAvatar } from "./Head
 import { useRouter } from "next/router";
 import Image from "next/image";
 import avatar from "./myAvatar.jpg";
+import Resume from "@/pages/resume";
 
 interface HeaderPropsType {
     displayBadge: boolean;
@@ -64,15 +65,17 @@ export default function Header({displayBadge, setDisplayBadge, viewWidth}: Heade
             }
         }
         
+        const nondisplay = " d-sm-block d-none"
+        const itemStyle = "m-0 txt-md pe-4 pe-sm-2 fw-5 txt-gray-7 "
         return ( 
         <li key = {idx}>
             {item !== "Profile"
             ?   <Link href = {link} >
-                    <StyledNavItem onClick = {(e: MouseEvent) => handleClick(e)} style = {item !== "Profile" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
+                    <StyledNavItem onClick = {(e: MouseEvent) => handleClick(e)} style = {item !== "Profile" ? padding : homePadding} className={item === "Resume" ? itemStyle + nondisplay : itemStyle}>
                         <span style= {item === itemclicked ? {color:"#38bdf8"} : {color: "white"}}>{item}</span> 
                     </StyledNavItem >
                 </Link>
-            :   <StyledNavItem id = {idx} onClick = {(e: MouseEvent) => handleClick(e)} style = {item !== "Profile" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7 d-xl-none">
+            :   <StyledNavItem id = {idx} onClick = {(e: MouseEvent) => handleClick(e)} style = {padding} className="m-0 txt-md fw-5 pe-4 txt-gray-7 d-xl-none">
                     <StyledAvatar>
                         <div style = {{borderRadius: "50%"}}>
                             <Image alt = "my avatar" src = {avatar} />

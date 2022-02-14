@@ -7,7 +7,7 @@ import restaurant from "./restaurant.png";
 const data = [
     {
         id: 1,
-        name: "Flashcard-o-matic",
+        name: "Flashcard o matic",
         description: "This app help users create decks of flash cards. Additionally, they can edit or delete any deck or card.",
         techs: "Html, CSS, Bootstrap, Javascript, Typescript, Nextjs, Node.js, Express, PosgrelSql, Vercel",
         image: flashcard,
@@ -60,10 +60,10 @@ export default function Projects() {
                 </StyledTech>
                 <StyledBtnContainer className='w-100'>
                     <div className='d-flex justify-content-center'>
-                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} target="_blank">
+                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} target="_blank" rel="noreferrer">
                             Demo
                         </a>
-                        <a className="p-2 btn btn-primary my-3 ms-2" href={code} target="_blank">
+                        <a className="p-2 btn btn-primary my-3 ms-2" href={code} target="_blank" rel="noreferrer">
                             Code
                         </a>
                     </div>

@@ -10,16 +10,21 @@ interface BadgePropsType {
 }
 
 export default function Badge({displayBadge, setDisplayBadge}: BadgePropsType) {
-    const initialWidth = window.innerWidth;
+    const initialWidth = (() => {
+        if (typeof window !== undefined)
+        return window.innerWidth
+    })();
     const [viewWidth, setViewWidth] = useState(initialWidth);
     const handleResize = () => setViewWidth(() => window.innerWidth);
     window.addEventListener('resize', handleResize);
     useEffect(() => {
-        if (viewWidth > 1200) {
-            setDisplayBadge(() => true)
-        } else {
-            if (displayBadge === true)
-            setDisplayBadge(() => !displayBadge);
+        if (viewWidth) {
+            if (viewWidth > 1200) {
+                setDisplayBadge(() => true)
+            } else {
+                if (displayBadge === true)
+                setDisplayBadge(() => !displayBadge);
+            }
         }
     }, [viewWidth])
 

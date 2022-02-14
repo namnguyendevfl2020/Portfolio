@@ -60,10 +60,10 @@ export default function Projects() {
                 </StyledTech>
                 <StyledBtnContainer className='w-100'>
                     <div className='d-flex justify-content-center'>
-                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} >
+                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} target="_blank">
                             Demo
                         </a>
-                        <a className="p-2 btn btn-primary my-3 ms-2" href={code}>
+                        <a className="p-2 btn btn-primary my-3 ms-2" href={code} target="_blank">
                             Code
                         </a>
                     </div>

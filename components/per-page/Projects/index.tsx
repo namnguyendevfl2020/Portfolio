@@ -11,7 +11,7 @@ const data = [
         description: "This app help users create decks of flash cards. Additionally, they can edit or delete any deck or card.",
         techs: "Html, CSS, Bootstrap, Javascript, Typescript, Nextjs, Node.js, Express, PosgrelSql, Vercel",
         image: flashcard,
-        demo: "https://flashcards-omega.vercel.app",
+        demo: "https://namnguyen-flashcards.vercel.app",
         code: "https://github.com/namnguyendevfl2020/flashcards",
     },
     {

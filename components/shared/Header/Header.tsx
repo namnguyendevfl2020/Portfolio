@@ -66,7 +66,7 @@ export default function Header({displayBadge, setDisplayBadge, viewWidth}: Heade
         }
         
         const nondisplay = " d-sm-block d-none"
-        const itemStyle = "m-0 txt-md pe-4 pe-sm-2 fw-5 txt-gray-7 "
+        const itemStyle = "m-0 txt-md pe-2 pe-sm-4 fw-5 txt-gray-7 d-block d-xs-none "
         return ( 
         <li key = {idx}>
             {item !== "Profile"
@@ -75,7 +75,7 @@ export default function Header({displayBadge, setDisplayBadge, viewWidth}: Heade
                         <span style= {item === itemclicked ? {color:"#38bdf8"} : {color: "white"}}>{item}</span> 
                     </StyledNavItem >
                 </Link>
-            :   <StyledNavItem id = {idx} onClick = {(e: MouseEvent) => handleClick(e)} style = {padding} className="m-0 txt-md fw-5 pe-4 txt-gray-7 d-xl-none">
+            :   <StyledNavItem id = {idx} onClick = {(e: MouseEvent) => handleClick(e)} style = {padding} className="m-0 txt-md fw-5 pe-2 pe-sm-4 txt-gray-7 d-xl-none">
                     <StyledAvatar>
                         <div style = {{borderRadius: "50%"}}>
                             <Image alt = "my avatar" src = {avatar} />

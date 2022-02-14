@@ -8,7 +8,7 @@ const data = [
     {
         id: 1,
         name: "Flashcard o matic",
-        description: "This app help users create decks of flash cards. Additionally, they can edit or delete any deck or card.",
+        description: "This app helps users create decks of flash cards. Additionally, they can edit or delete any deck or card.",
         techs: "Html, CSS, Bootstrap, Javascript, Typescript, Nextjs, Node.js, Express, PosgrelSql, Vercel",
         image: flashcard,
         demo: "https://namnguyen-flashcards.vercel.app",

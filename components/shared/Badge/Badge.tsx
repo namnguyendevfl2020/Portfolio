@@ -8,8 +8,6 @@ export default function Badge() {
     return (
         <>
         <div className={styles.container + " me-4 mt-2 p-0"}>
-            {/* <div className={styles["banner-spacing"]}></div> */}
-            {/* <div style = {{height: "65px"}}></div> */}
             <div className='py-4' style = {{border: "2px solid #ced4da"}}>
                 <div className={styles.center}>
                     <div className={styles.image}>
@@ -25,14 +23,13 @@ export default function Badge() {
                     </div>
                     <div className="d-flex justify-content-center py-4">
                         <button className={styles.btn + " border-outline-none border-8px px-4 txt-md fw-6"} > Download CV
-                            {/* <p className="d-flex justify-content-center m-0 p-2 border-outline-none txt-md fw-6">Download CV</p> */}
                         </button>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <Icon type = "mail"/>
+                        <Icon type = "email"/>
                         <Icon type = "github"/>
                         <Icon type = "linkedin"/>
-                        <Icon type = "stackOverflow"/>
+                        <Icon type = "stackoverflow"/>
                     </div>
                 </div>
             </div>

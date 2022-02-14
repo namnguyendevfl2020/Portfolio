@@ -26,7 +26,7 @@ const data = [
     {
         id: 3,
         name: "Restaurant reservation",
-        description: "This app is designed for restaurant personels to add customer information when a customer calls to request a reservation",
+        description: "This app is designed for restaurant personels to add customer information when the customer calls to request a reservation",
         techs: "Html, CSS, Bootstrap, Javascript, React.js, Node.js, Express, PosgrelSql, Vercel",
         image: restaurant,
         demo: "https://namnguyen-restaurant-reservation.vercel.app/",

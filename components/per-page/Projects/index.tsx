@@ -49,7 +49,7 @@ export default function Projects() {
         return (
             <div key = {idx} className="row my-2" style = {{borderBottom: "1px solid"}}>
             <div className="col d-flex align-items-center">
-                <Image src = {image} width="500" height="250" />
+                <Image src = {image} alt = {name} width="500" height="250" />
             </div>
             <div className="col">
             <StyledProject>
@@ -60,10 +60,10 @@ export default function Projects() {
                 </StyledTech>
                 <StyledBtnContainer className='w-100'>
                     <div className='d-flex justify-content-center'>
-                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} target="_blank">
+                        <a className="p-2 border-outline-none btn btn-primary my-3 me-2" href={demo} >
                             Demo
                         </a>
-                        <a className="p-2 btn btn-primary my-3 ms-2" href={code} target="_blank">
+                        <a className="p-2 btn btn-primary my-3 ms-2" href={code}>
                             Code
                         </a>
                     </div>

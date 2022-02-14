@@ -12,26 +12,3 @@ export default function Home() {
     </>
   )
 }
-
-// export async function getStaticProps({params}) {
-//   return 
-// }
-
-// Home.getLayout = function getLayout(page: ReactElement) {
-//   console.log(page)
-//   return (
-//     <Layout type = "about">
-//       <div className='d-flex' >
-//         <Badge />
-//         <BadgeSpacing />
-//         <BadgeHeading />
-//         <div className='w-100'>
-//           <Header type = "About"/>
-//           <div >
-//             {page}
-//           </div>
-//         </div>
-//       </div>
-//     </Layout>
-//   )
-// }

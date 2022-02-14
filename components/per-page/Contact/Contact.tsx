@@ -46,7 +46,6 @@ export default function Contact () {
             const headers = new Headers();
             headers.append("Content-Type", "application/json");
             try {
-                console.log("post data")
 
                 const response = await fetch(url, {
                     method: "POST",

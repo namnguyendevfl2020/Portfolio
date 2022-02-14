@@ -9,7 +9,7 @@ const data = [
         id: 1,
         name: "Flashcard-o-matic",
         description: "This app help users create decks of flash cards. Additionally, they can edit or delete any deck or card.",
-        techs: "Html, CSS, Bootstrap, Javascript, Typescript, Nextjs, Node.js, Express, PosgrelSql, Vercell",
+        techs: "Html, CSS, Bootstrap, Javascript, Typescript, Nextjs, Node.js, Express, PosgrelSql, Vercel",
         image: flashcard,
         demo: "https://flashcards-omega.vercel.app",
         code: "https://github.com/namnguyendevfl2020/flashcards",
@@ -20,7 +20,7 @@ const data = [
         description: "This app provides users with information about movies and theaters. Users can learn movie details as well as reviews from other users and look up where to watch the movie.",
         techs: "Html, CSS, Bootstrap, Javascript, React.js, Node.js, Express, PosgrelSql, Heroku",
         image: movies,
-        demo: "https://we-love-movies-client-nam.herokuapp.com/",
+        demo: "https://namnguyen-movies-frontend.herokuapp.com",
         code: "https://github.com/namnguyendevfl2020/Movies",
     },
     {
@@ -49,7 +49,7 @@ export default function Projects() {
         return (
             <div key = {idx} className="row my-2" style = {{borderBottom: "1px solid"}}>
             <div className="col d-flex align-items-center">
-                <Image src = {image !== undefined && image} width="500" height="250" />
+                <Image src = {image} width="500" height="250" />
             </div>
             <div className="col">
             <StyledProject>

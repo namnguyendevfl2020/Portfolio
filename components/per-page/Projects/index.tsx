@@ -20,7 +20,7 @@ const data = [
         description: "This app provides users with information about movies and theaters. Users can learn movie details as well as reviews from other users and look up where to watch the movie.",
         techs: "Html, CSS, Bootstrap, Javascript, React.js, Node.js, Express, PosgrelSql, Heroku",
         image: movies,
-        demo: "https://namnguyen-movies-frontend.herokuapp.com",
+        demo: "https://namnguyen-movies.herokuapp.com/",
         code: "https://github.com/namnguyendevfl2020/Movies",
     },
     {
@@ -29,7 +29,7 @@ const data = [
         description: "This app is designed for restaurant personels to add customer information when a customer calls to request a reservation",
         techs: "Html, CSS, Bootstrap, Javascript, React.js, Node.js, Express, PosgrelSql, Vercel",
         image: restaurant,
-        demo: "https://final-capstone-2-front-end.vercel.app/dashboard",
+        demo: "https://namnguyen-restaurant-reservation.vercel.app/",
         code: "https://github.com/namnguyendevfl2020/restaurant-reservation",
     }
 ]

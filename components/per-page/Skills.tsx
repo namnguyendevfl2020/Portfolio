@@ -58,7 +58,7 @@ export default function Skills () {
     return (
         <>
         <div className='w-100 d-flex '>
-            <div className='row d-flex flex-wrap'>
+            <div className='row d-flex justify-content-center'>
                 {renderedImages}
             </div>
         </div>

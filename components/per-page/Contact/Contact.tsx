@@ -125,7 +125,7 @@ export default function Contact () {
                 </div>
                 <div className='d-flex align-items-center my-3'>
                     <Icon type = {"email"}/>
-                    <p className='m-0 px-2 txt-sm fw-5 txt-gray-6'>namnguyenfl990@gmail.com</p>
+                    <p className='m-0 px-2 txt-sm fw-5 txt-gray-6'>namnguyendevfl990@gmail.com</p>
                 </div>
             </div>
         </div>

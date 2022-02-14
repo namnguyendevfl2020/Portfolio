@@ -7,19 +7,10 @@ import { useEffect, useState } from 'react';
 interface BadgePropsType {
     displayBadge: boolean;
     setDisplayBadge:  React.Dispatch<React.SetStateAction<any>>;
+    viewWidth: number | undefined;
 }
 
-export default function Badge({displayBadge, setDisplayBadge}: BadgePropsType) {
-    const initialWidth = (() => {
-        if (typeof window !== "undefined")
-        return window.innerWidth
-    })();
-
-    const [viewWidth, setViewWidth] = useState(initialWidth);
-    if (typeof window !== "undefined") {
-        const handleResize = () => setViewWidth(() => window.innerWidth);
-        window.addEventListener('resize', handleResize);
-    }
+export default function Badge({displayBadge, setDisplayBadge, viewWidth}: BadgePropsType) {
 
     useEffect(() => {
         if (viewWidth) {

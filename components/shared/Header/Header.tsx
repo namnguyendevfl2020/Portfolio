@@ -8,21 +8,40 @@ import avatar from "./myAvatar.jpg";
 interface HeaderPropsType {
     displayBadge: boolean;
     setDisplayBadge:  React.Dispatch<React.SetStateAction<any>>;
+    viewWidth: number | undefined;
 }
 
-export default function Header({displayBadge, setDisplayBadge}: HeaderPropsType) {
-    const { pathname } = useRouter()
-    const navItem = pathname.split("/")[1]
+export default function Header({displayBadge, setDisplayBadge, viewWidth}: HeaderPropsType) {
+    const { pathname } = useRouter();
+    const navItem = pathname.split("/")[1];
+
     const capNavItem = (() => {
         if (pathname === "/") {
-            return "About"
+            return "About";
         } 
-        return navItem[0].toUpperCase() + navItem.slice(1)
+        return navItem[0].toUpperCase() + navItem.slice(1);
     })() 
-    const [itemclicked, setItemclicked] = useState("")
+
+    const [ itemclicked, setItemclicked ] = useState("");
+    const [ containerClassName, setContainerClassName ] = useState("")
+    useEffect (() => {
+        if (viewWidth) {
+            if (viewWidth<1200) {
+                setContainerClassName(() => "p-0 d-flex align-items-center left-0")
+            } else {
+                setContainerClassName(() => "p-0 d-flex align-items-center")
+            }
+        }
+    },[viewWidth])
+
     useEffect(() => {
         setItemclicked(() => capNavItem)
     },[capNavItem])
+
+    useEffect(() => {
+        setItemclicked(() => capNavItem)
+    },[capNavItem])
+
 
     const navItems = ['Profile', 'About', 'Skills', 'Projects', 'Contact', 'Resume']
 
@@ -42,7 +61,6 @@ export default function Header({displayBadge, setDisplayBadge}: HeaderPropsType)
             setItemclicked(() => item)
             if (item === "Profile") {
                 setDisplayBadge(() => !displayBadge)
-                console.log(displayBadge)
             }
         }
         
@@ -67,8 +85,8 @@ export default function Header({displayBadge, setDisplayBadge}: HeaderPropsType)
         )
     })
     return (<>
-        <StyledContainer fluid className = "p-0 d-flex align-items-center">
-            <StyledList className = "m-0 p-0 d-flex justify-content-start">
+        <StyledContainer fluid className = {containerClassName}>
+            <StyledList className = "m-0 p-0 d-flex justify-content-xl-start justify-content-center">
                 {/* <button>Profile</button> */}
                 {renderedNavItems}
             </StyledList>

@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 
 const vercelIcon = <div className='d-flex align-items-center justify-content-center' >
-    <div className='d-flex align-items-center border-rounded justify-content-center black-white' style = {{height:"130px", width: "130px"}}>
+    <div className='d-flex align-items-center border-rounded justify-content-center black-white' style = {{height:"50px", width: "50px"}}>
         <VercelIcon />
     </div>
 </div>
 const chaiIcon = <div className='d-flex align-items-center justify-content-center' >
-<div className='d-flex align-items-center justify-content-center' style = {{zIndex: "1", height:"130px", width: "130px"}}>
+<div className='d-flex align-items-center justify-content-center' style = {{zIndex: "1", height:"50px", width: "50px"}}>
     <Image alt = "chai" src = "/skills/chai-logo.png" width="130px" height = "130px" className='chai-skill-image' />
 </div>
 </div>
@@ -44,7 +44,7 @@ export default function Skills () {
             return true
         })()
         return (
-            <div key = {idx} className='col mx-4 my-2'>
+            <div key = {idx} className='col-2 mx-2 my-2'>
                 {link
                 ?   <div className="d-flex justify-content-center align-items-center">
                         <img className={styles.image} src = {src[0]} alt = "language icons" />

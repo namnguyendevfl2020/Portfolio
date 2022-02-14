@@ -114,7 +114,12 @@ button:hover{
   letter-spacing: -0.1rem;
 }
 
-.vercel-logo {
+.vercel-logo-sm {
+  width : 25px;
+  height: 25px
+}
+
+.vercel-logo-lg {
   width : 50px;
   height: 50px
 }

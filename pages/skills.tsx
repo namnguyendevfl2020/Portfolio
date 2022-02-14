@@ -1,6 +1,9 @@
-import { Skills } from '../components/per-page'
-export default function SkillsPage() {
+import { Skills } from '../components/per-page';
+interface PropType {
+    viewWidth: number;
+}
+export default function SkillsPage({viewWidth}: PropType) {
     return (<>
-    <Skills />
+    <Skills viewWidth={viewWidth}/>
     </>)
 }

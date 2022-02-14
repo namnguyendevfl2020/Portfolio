@@ -77,7 +77,7 @@ const HeadComponent = (props: HeadComponentProps) => {
         <HeaderLinen />
           {
             ( viewWidth &&  viewWidth < 600)
-            ? <div className='px-2'>
+            ? <div className='px-4'>
                 {children}
               </div>
             : <div>
@@ -89,8 +89,6 @@ const HeadComponent = (props: HeadComponentProps) => {
             }  
           </div>
           }
-          
-          
       </> 
       ) 
   }

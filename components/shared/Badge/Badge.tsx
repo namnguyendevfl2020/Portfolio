@@ -1,5 +1,4 @@
 import styles from './badge.module.css'
-import avatar from "../../../images/myAvatar.jpg";
 import Image from 'next/image';
 import { Icon } from "./Icons";
 import { useEffect } from 'react';
@@ -29,7 +28,7 @@ export default function Badge({displayBadge, setDisplayBadge, viewWidth}: BadgeP
             <div className='py-4' style = {{border: "2px solid #ced4da"}}>
                 <div className={styles.center}>
                     <div className={styles.image}>
-                        <Image alt = "my avatar" src = {avatar} />
+                        <Image alt = "my avatar" src = "/myAvatar.jpg" width = "200px" height ="200px"/>
                     </div>
                 </div>
                 <div className={styles.break + " px-3"}></div>
@@ -40,8 +39,10 @@ export default function Badge({displayBadge, setDisplayBadge, viewWidth}: BadgeP
                         <hr className="m-0 mt-3" style = {{width:"250px"}}></hr>
                     </div>
                     <div className="d-flex justify-content-center py-4">
-                        <button className={styles.btn + " border-outline-none border-8px px-4 txt-md fw-6"} > Download CV
-                        </button>
+                        <a href = "resume.pdf" download="resume">
+                            <button className={styles.btn + " border-outline-none border-8px px-4 txt-md fw-6"} > Download CV
+                            </button>
+                        </a>
                     </div>
                     <div className="d-flex justify-content-center">
                         <Icon type = "email"/>

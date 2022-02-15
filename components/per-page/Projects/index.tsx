@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { StyledBtnContainer, StyledProject, StyledTech } from "./ProjectsStyles";
-import flashcard from "../../../images/Flashcard_Dashboard.png";
-import movies from "../../../images/We_love_movies.png";
-import restaurant from "../../../images/restaurant.png";
+import flashcard from "./images/Flashcard_Dashboard.png";
+import movies from "./images/We_love_movies.png";
+import restaurant from "./images/restaurant.png";
 
 const data = [
     {

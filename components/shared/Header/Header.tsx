@@ -3,7 +3,7 @@ import Link from "next/link"
 import { StyledContainer, StyledNavItem, StyledList, StyledAvatar } from "./HeaderStyles"
 import { useRouter } from "next/router";
 import Image from "next/image";
-import avatar from "../../../images/myAvatar.jpg";
+// import avatar from "../../../images/myAvatar.jpg";
 import Resume from "@/pages/resume";
 
 interface HeaderPropsType {
@@ -52,12 +52,6 @@ export default function Header({displayBadge, setDisplayBadge, viewWidth}: Heade
             if (item === 'Q&A') return '/questions-and-anwsers'
             return `/${item.toLowerCase()}`
         })()
-        // const padding = {
-        //     padding : "0 20px 0 20px"
-        // }
-        // const homePadding = {
-        //     padding : "0 20px 0 0px"
-        // }
         const handleClick = (e: MouseEvent) => {
             setItemclicked(() => item)
             if (item === "Profile") {
@@ -78,7 +72,7 @@ export default function Header({displayBadge, setDisplayBadge, viewWidth}: Heade
             :   <StyledNavItem id = {idx} onClick = {(e: MouseEvent) => handleClick(e)}  className="m-0 txt-md fw-5 px-3 px-sm-4 txt-gray-7 d-xl-none">
                     <StyledAvatar>
                         <div style = {{borderRadius: "50%"}}>
-                            <Image alt = "my avatar" src = {avatar} />
+                            <Image alt = "my avatar" src = "/myAvatar.jpg" width="50px" height = "50px"/>
                         </div>
                     </StyledAvatar>
                     {/* <span style= {item === itemclicked ? {color:"#38bdf8"} : {color: "white"}}>{item}</span>  */}

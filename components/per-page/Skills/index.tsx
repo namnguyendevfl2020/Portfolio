@@ -28,7 +28,7 @@ export default function Skills ({viewWidth}: SkillsPropType) {
         {"Typescript": 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'},
         {"Redux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"},
         {"React":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
-        {"Nextjs": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"},
+        {"Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"},
         {"Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},
         {"Express":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"},
         {"PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},

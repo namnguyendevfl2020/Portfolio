@@ -25,7 +25,7 @@ module.exports = (phase) => {
           APP_EMAIL_PW,
         },
         publicRuntimeConfig: {
-          API_BASEURL: isDev ? API_BASEURL_DEVELOPMENT : API_BASEURL_PRODUCTION
+          API_BASEURL: isDev ? API_BASEURL_DEVELOPMENT : "/api"
         },
     }
 }

@@ -8,8 +8,6 @@ require('dotenv').config();
 const {
   APP_EMAIL_USERNAME,
   APP_EMAIL_PW,
-  API_BASEURL_DEVELOPMENT,
-  API_BASEURL_PRODUCTION
 } = process.env;
 
 module.exports = (phase) => {
@@ -25,7 +23,7 @@ module.exports = (phase) => {
           APP_EMAIL_PW,
         },
         publicRuntimeConfig: {
-          API_BASEURL: isDev ? API_BASEURL_DEVELOPMENT : "/api"
+          API_BASEURL: isDev ? "http://localhost:3000/api" : "/api"
         },
     }
 }

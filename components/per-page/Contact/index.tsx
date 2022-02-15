@@ -45,7 +45,6 @@ export default function Contact () {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const { API_BASEURL } = publicRuntimeConfig
-        console.log(API_BASEURL)
         const url = `${API_BASEURL}/contact`;
         const postData = async () => {
             const headers = new Headers();

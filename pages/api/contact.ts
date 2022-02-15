@@ -19,8 +19,8 @@ export default function sendMessage (req: NextApiRequest, res: NextApiResponse) 
     });
  
     const options = {
-        from: APP_EMAIL_USERNAME,
-        to: email,
+        from: email,
+        to: APP_EMAIL_USERNAME,
         subject: `Porfolio: ${subject}`, // Subject line
         html: `<b>${message}</b>`,
     };

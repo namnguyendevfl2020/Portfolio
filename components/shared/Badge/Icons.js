@@ -2,7 +2,6 @@ import { IconContext } from "react-icons";
 import { HiMail } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiStackOverflowLine } from "react-icons/ri";
-import Link from "next/link";
 
 export const Icon = ({type}) => {
   const url = (() => {

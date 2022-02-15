@@ -36,7 +36,7 @@ export default function MyApp({ Component,pageProps }: AppPropsWithLayout) {
         <BadgeHeading />
         <div className='w-100'>
           <Header displayBadge = {displayBadge} setDisplayBadge = {setDisplayBadge} viewWidth = {viewWidth}/>
-          <div >
+          <div className='p-0' >
           <Component {...pageProps} viewWidth = {viewWidth}/>
           </div>
         </div>

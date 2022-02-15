@@ -13,8 +13,6 @@ export const Icon = ({type}) => {
         {type === "phone" && <BsTelephoneFill />}
         {type === "skype" && <AiFillSkype />}
         {type === "email" && <HiMail />}
-        {type === "test" && <SiVercel />}
-
     </button>
   </IconContext.Provider>
 }

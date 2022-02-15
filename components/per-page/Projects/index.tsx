@@ -1,8 +1,8 @@
-import Image from "next/image"
-import { StyledBtnContainer, StyledProject, StyledTech } from "./ProjectsStyles"
-import flashcard from "./Flashcard_Dashboard.png";
-import movies from "./We_love_movies.png";
-import restaurant from "./restaurant.png";
+import Image from "next/image";
+import { StyledBtnContainer, StyledProject, StyledTech } from "./ProjectsStyles";
+import flashcard from "../../../images/Flashcard_Dashboard.png";
+import movies from "../../../images/We_love_movies.png";
+import restaurant from "../../../images/restaurant.png";
 
 const data = [
     {
@@ -38,7 +38,7 @@ export default function Projects() {
 
     const renderedProjects = data.map((project,idx) => {
         const { id, name, description, techs, image, demo, code } = project;
-        const technologies = techs && techs.split(",") || []
+        const technologies = techs && techs.split(",") || [];
         const renderedTech = technologies.map((tech,techIdx) => {
             return (
                     <div key = {techIdx} className='m-2 px-2 py-1' style = {{borderBottom: "1px solid "}}>

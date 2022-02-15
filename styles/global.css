@@ -7,7 +7,9 @@ a {
 * {
   box-sizing: border-box;
 }
-
+main {
+  overflow-x: hidden;
+}
 button:disabled{
   background: #6c757d !important;
   color: white !important;
@@ -121,7 +123,7 @@ button:hover{
 
 .vercel-logo-lg {
   width : 50px;
-  height: 50px
+  height: 50px;
 }
 
 /* tones */
@@ -245,4 +247,17 @@ button:hover{
 
 .left-0{
   left: 0;
+}
+
+/* resume */
+.resume, .resume-div {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.resume {
+  margin-top: -28px;
+}
+.resume-div {
+  margin-top: -80px;
 }

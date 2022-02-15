@@ -1,8 +1,8 @@
 import styles from './badge.module.css'
-import avatar from "./myAvatar.jpg";
+import avatar from "../../../images/myAvatar.jpg";
 import Image from 'next/image';
 import { Icon } from "./Icons";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 interface BadgePropsType {
     displayBadge: boolean;

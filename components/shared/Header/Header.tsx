@@ -3,7 +3,7 @@ import Link from "next/link"
 import { StyledContainer, StyledNavItem, StyledList, StyledAvatar } from "./HeaderStyles"
 import { useRouter } from "next/router";
 import Image from "next/image";
-import avatar from "./myAvatar.jpg";
+import avatar from "../../../images/myAvatar.jpg";
 import Resume from "@/pages/resume";
 
 interface HeaderPropsType {

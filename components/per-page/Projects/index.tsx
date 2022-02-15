@@ -48,10 +48,10 @@ export default function Projects() {
         })
         return (
             <div key = {idx} className="row my-2 " style = {{borderBottom: "1px solid"}}>
-                <div className="col-12 col-md d-flex align-items-center justify-md-content-center">
+                <div className="col-12 col-lg d-flex align-items-center justify-content-center justify-content-lg-start">
                     <Image src = {image} alt = {name} width="500" height="250" />
                 </div>
-                <div className="col-12 col-md justify-md-content-center">
+                <div className="col-12 col-lg justify-content-center">
                 <StyledProject>
                     <h3>{name}</h3>
                     <p>{description}</p>

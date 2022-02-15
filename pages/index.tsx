@@ -13,7 +13,7 @@ export default function Home() {
               Previously, I practiced medicine for a period of time in Vietnam and continued to study medicine when coming the U.S. I took a series of USMLE and applied for a residency program. Sadly, I did not get an interview because I failed one of the exams on the first attempt, and I am an old medical graduate. 
           </p>
           <p className="txt-gray-6">
-              Eventhough I can not make a career in Medicine, the experience in Medicine allowed me to develop my logical thinking, problem solving, decision making, collaboration and conflict resolution skills. I believe these skills can help me be successul as a full stack web Developer. 
+              Even though I can not make a career in Medicine, the experience in Medicine allowed me to develop my logical thinking, problem solving, decision making, collaboration and conflict resolution skills. I believe these skills can help me be successful as a full stack web Developer. 
           </p>
       </div>
     </section>

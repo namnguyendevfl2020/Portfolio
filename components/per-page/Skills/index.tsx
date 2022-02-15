@@ -20,7 +20,7 @@ interface SkillsPropType {
 
 export default function Skills ({viewWidth}: SkillsPropType) {
     const images = [
-        {"Html": 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'},
+        {"HTML": 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'},
         {"CSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"},
         {"Bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"},
         {"TailwindCSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"},

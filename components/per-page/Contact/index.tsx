@@ -3,6 +3,8 @@ import  useState  from 'react-usestateref';
 import styles from './contact.module.css';
 import { Icon } from '../Icons';
 const validator = require("validator");
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 
 export default function Contact () {
 
@@ -42,7 +44,9 @@ export default function Contact () {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const url = "http://localhost:3000/api/contact";
+        const { API_BASEURL } = publicRuntimeConfig
+        console.log(API_BASEURL)
+        const url = `${API_BASEURL}/contact`;
         const postData = async () => {
             const headers = new Headers();
             headers.append("Content-Type", "application/json");

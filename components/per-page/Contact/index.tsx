@@ -71,7 +71,7 @@ export default function Contact () {
         <>
         <div className='row d-md-flex justify-content-center justify-content-md-between'>
             {messageSent
-            ? <> <p className="fw-7 txt-sm"> Thank you for the message!</p> </>
+            ? <> <p className="col-lg-6 col-md-7 col-10 fw-7 txt-sm"> Thank you for the message!</p> </>
             : <form className='col-lg-6 col-md-7 col-10' onSubmit={handleSubmit}>
                 <h2 className='fw-7 letter-spacing-tight'>Contact me</h2>
                 <div className='d-flex flex-column'>
